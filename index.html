@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <title>Músicas</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="imagem/icon.png" type="image/png">
+    <!--API-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <!--Css-->
+     <style>
+       *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body 
+        {
+            font-family: 'Roboto Mono', monospace;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ffffff, #c8e6c9);
+        }
+
+        #titulo
+        {
+            font-weight: bold;
+            font-size: 2.5em;
+            color: rgb(73, 117, 117);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table
+        {
+            width: 60%;
+            background-color: #ffffff;
+            border-collapse: collapse;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        td, th 
+        {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        td a 
+        {
+            color: rgb(73, 117, 117);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        img 
+        {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+        }
+     </style>
+    </head>
+    <body>
+    <!--título-->
+    <p id="titulo">Seu player perfeito de músicas</p>
+    <table>
+        <tbody>
+        <tr>
+           <td>
+            <img src="imagem/hs.jpg" alt="Cantor">
+           </td>
+           <td>
+            <a href="https://pt.wikipedia.org/wiki/Harry_Styles" target="_blank">Harry Styles - Adore You</a>
+           </td>
+           <td>
+            <audio controls>
+                <source src="musicas/Harry Styles - Adore You [128].mp3" type="audio/mp3">
+            </audio>
+           </td>
+        </tr>
+
+        <tr>
+            <td>
+             <img src="imagem/df.jpg" alt="Cantor">
+            </td>
+            <td>
+             <a href="https://pt.wikipedia.org/wiki/The_Weeknd" target="_blank">The Weeknd - Die For You</a>
+            </td>
+            <td>
+             <audio controls>
+                 <source src="musicas/12. Die For You.mp3" type="audio/mp3">
+             </audio>
+            </td>
+         </tr>
+
+         <tr>
+            <td>
+             <img src="imagem/as.jpg" alt="Cantora">
+            </td>
+            <td>
+             <a href="https://pt.wikipedia.org/wiki/Adriana_Varela" target="_blank"> Adriana Varela - Vida Mia</a>
+            </td>
+            <td>
+             <audio controls>
+                 <source src="musicas/Adriana_Varela_-_Vida_Mia.mp3" type="audio/mp3">
+             </audio>
+            </td>
+         </tr>
+        </tbody>
+    </table>
+    </body>
+</html>
